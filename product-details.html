@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO-SHOES | SPORTSWEAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?fammily=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="home.html"><img src="images/logo.png" width="150px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    <!----- Single product details ---->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/gallery-1.png" width="100%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/gallery-1.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-3.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-4.png" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / Shoes</p>
+                <h1>Jordan Stay Loyal 3</h1>
+                <h4>₱5,700.00 / ₱8,600.00</h4>
+                <select>
+                    <option>Size</option>
+                    <option>45</option>
+                    <option>44</option>
+                    <option>43</option>
+                    <option>42</option>
+                    <option>41</option>
+                    <option>40</option>
+                </select>
+                <input type="number" value="1">
+                <a href="cart.html" class="btn">Add To Cart</a>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>The Jordan Stay Loyal 3 is a stylish and versatile sneaker designed for both performance and casual
+                    wear. Featuring a durable upper, responsive cushioning, and a traction-focused outsole, it combines
+                    comfort and support. With the iconic Jumpman logo and various colorways, it’s perfect for athletes
+                    and sneaker enthusiasts alike.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!------- Title -------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <a href="products.html">
+                <p>View More</p>
+            </a>
+        </div>
+    </div>
+    <!------- Product -------->
+    <div class="small-container">
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.png">
+                <h4>Sabrina 2 'Colour Vision' EP</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₱7,395.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.png">
+                <h4>Book 1 EP</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₱7,895.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.png">
+                <h4>KD17 EP</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>₱8,395.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.png">
+                <h4>Nike G.T. Cut 3 EP</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₱8,239.00</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+     <!------ Footer ------>
+     <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fa fa-envelope"> ecoshoes@gmail.com</i></li>
+                        <br>
+                        <li><i class="fa fa-phone"> +63 9953479891</i></li>
+                        <br>
+                        <li><i class="fa fa-map-marker"> Tanauan City, Batangas, Philippines</i></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <br>
+                        <li>Terms of Service</li>
+                        <br>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                        <br>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <br>
+                        <li><i class="fa fa-instagram"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><i class="fa fa-copyright"> Copyright 2024 - ECO-SHOES By Ginold Christoper Veloso. All rights reserved</i></p>
+        </div>
+    </div>
+
+    <!------ JS for toggle menu ------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+
+
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+    <!------ js for product gallery ------->
+
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var Smalling = document.getElementsByClassName("small-img");
+
+        Smalling[0].onclick = function () {
+            ProductImg.src = Smalling[0].src;
+        }
+        Smalling[1].onclick = function () {
+            ProductImg.src = Smalling[1].src;
+        }
+        Smalling[2].onclick = function () {
+            ProductImg.src = Smalling[2].src;
+        }
+        Smalling[3].onclick = function () {
+            ProductImg.src = Smalling[3].src;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO-SHOES | SPORTSWEAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?fammily=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" width="150px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="#"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!------ Login Form ------>
+    <section class="forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" id="email" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" id="password" placeholder="Password" class="password">
+                        <i class="fa fa-eye-slash eye-icon"></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-passowrd">Forgot password?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button type="button" onclick="func()">Login</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Don't have an account?<a href="#" class="link signup-link">Signup</a></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="https://www.facebook.com/login" class="field facebook">
+                    <i class="fa fa-facebook facebook-icons"></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dg%26oq%3Dg%26gs_lcrp%3DEgZjaHJvbWUqDggAEEUYOxhDGIAEGIoFMg4IABBFGDsYQxiABBiKBTIMCAEQABhDGIAEGIoFMhgIAhAuGEMYgwEYxwEYsQMY0QMYgAQYigUyEggDEAAYQxiDARixAxiABBiKBTIPCAQQABhDGLEDGIAEGIoFMgoIBRAAGLEDGIAEMg0IBhAAGIMBGLEDGIAEMgYIBxBFGDzSAQczMDBqMGo3qAIAsAIA%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAZAAQ&hl=en&ifkv=ARpgrqezzA3QwYgZHT8fLCPSDsY3bT0BWx4JM49U0P1Xi7GIrKNVObr8AQfIujMvaFHl2JNUHcyQJA&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1074440897%3A1729385191565318&ddm=0"
+                    class="field google">
+                    <img src="images/google.png" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+
+
+        <!------ SignUp Form ------>
+        <div class="form signup">
+            <div class="form-content">
+                <header>Signup</header>
+
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="name" placeholder="Name" class="input">
+                    </div>
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm Password" class="password">
+                        <i class="fa fa-eye-slash eye-icon"></i>
+                    </div>
+
+
+                    <div class="field button-field">
+                        <button type="button" onclick="location.href='account.html'">Signup</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span>Already have an account?<a href="#" class="link login-link">Login</a></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dg%26oq%3Dg%26gs_lcrp%3DEgZjaHJvbWUqDggAEEUYOxhDGIAEGIoFMg4IABBFGDsYQxiABBiKBTIMCAEQABhDGIAEGIoFMhgIAhAuGEMYgwEYxwEYsQMY0QMYgAQYigUyEggDEAAYQxiDARixAxiABBiKBTIPCAQQABhDGLEDGIAEGIoFMgoIBRAAGLEDGIAEMg0IBhAAGIMBGLEDGIAEMgYIBxBFGDzSAQczMDBqMGo3qAIAsAIA%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAZAAQ&hl=en&ifkv=ARpgrqezzA3QwYgZHT8fLCPSDsY3bT0BWx4JM49U0P1Xi7GIrKNVObr8AQfIujMvaFHl2JNUHcyQJA&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1074440897%3A1729385191565318&ddm=0"
+                    class="field google">
+                    <img src="images/google.png" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+     <!------ Footer ------>
+     <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fa fa-envelope"> ecoshoes@gmail.com</i></li>
+                        <br>
+                        <li><i class="fa fa-phone"> +63 9953479891</i></li>
+                        <br>
+                        <li><i class="fa fa-map-marker"> Tanauan City, Batangas, Philippines</i></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <br>
+                        <li>Terms of Service</li>
+                        <br>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                        <br>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <br>
+                        <li><i class="fa fa-instagram"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><i class="fa fa-copyright"> Copyright 2024 - ECO-SHOES By Ginold Christoper Veloso. All rights reserved</i></p>
+        </div>
+    </div>
+
+    <!------ JS for toggle menu ------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+
+
+
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+    <script>
+        function func() {
+            var email = document.getElementById("email").value;
+            var pass = document.getElementById("password").value;
+            if (email == 'ginoldveloso2@gmail.com' && pass == 'gc0321') {
+                alert("Success full ! ")
+                window.location.assign('home.html')
+            }
+            else {
+                alert("Wrong Email or Password")
+            }
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
